@@ -1,0 +1,11 @@
+.vs/
+bin/
+obj/
+
+*.csproj.user
+
+*.sdf
+*.opensdf
+
+*.nuget.props
+*.nuget.targets
