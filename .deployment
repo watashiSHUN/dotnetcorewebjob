@@ -1,2 +1,2 @@
 [config]
-Project=DotNetCore
+command = deploy.cmd
