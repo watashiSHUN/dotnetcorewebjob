@@ -65,7 +65,7 @@ SET MSBUILD_PATH=%ProgramFiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe
 :: Deployment
 :: ----------
 
-echo Handling .NET Console Application deployment.
+echo Handling aspnetcore webjobs
 
 :: 1. Restore NuGet packages
 IF /I "DotNetCore.sln" NEQ "" (
