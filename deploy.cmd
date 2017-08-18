@@ -74,7 +74,7 @@ IF /I "DotNetCore.sln" NEQ "" (
 )
 
 :: 2. Build to the temporary path
-call :ExecuteCmd dotnet publish "%DEPLOYMENT_SOURCE%\DotNetCore\DotNetCore.csproj" --output "%DEPLOYMENT_TEMP%\app_data\jobs\continuous\deployedJob" --configuration Release
+call :ExecuteCmd dotnet publish "%DEPLOYMENT_SOURCE%\DotNetCore\DotNetCore.csproj" --output "%DEPLOYMENT_TEMP%\app_data\jobs\continuous\deployedJob" --configuration Release -r win10-x64
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 3. Run web job deploy script
